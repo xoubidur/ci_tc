@@ -1,0 +1,88 @@
+a {  
+	font-family: Verdana; 
+	color: #333366
+}
+body {  
+	font-family: Verdana; 
+	font-size: 11px; 
+	font-style: normal; 
+	line-height: normal; 
+	font-weight: normal; 
+	font-variant: normal; 
+	text-transform: none; 
+	color: #000000; 
+	background-color: #FFFFFF
+}
+
+th
+{
+    font-size: 11px;
+    font-family: Verdana;
+    font-weight: bold;
+    text-align: left;
+    background-color: #F0F0F0;
+    border-collapse: collapse;
+    border-bottom-width : 1px;
+    border-top-width : 0px;
+    border-left-width : 0px;
+    border-right-width : 0px;
+    border-style : solid;
+    border-color : Gray;
+}
+td
+{
+    font-size: 11px;
+    font-family: Verdana;
+}
+input, select
+{
+    font-size : 11px;
+    font-family: Verdana;
+}
+input.login
+{
+    border-width : 1px;
+    border-style : solid;
+    border-color : Gray;
+    font-family : Verdana;
+    font-size : 11px;
+}
+input.file
+{
+    border-width : 1px;
+    border-style : solid;
+    border-color : Gray;
+    font-family : Verdana;
+    font-size : 11px;
+}
+table.box-table
+{
+    border-width : 1px;
+    border-style : solid;
+    border-color : Gray;
+    background-color: White;
+    border-collapse: collapse;
+}
+table.box-table td
+{
+    border-collapse: collapse;
+    border-bottom-width : 1px;
+    border-top-width : 0px;
+    border-left-width : 0px;
+    border-right-width : 0px;
+    border-style : solid;
+    border-color : Gray;
+}
+td.table-header
+{
+    font-size: 11px;
+    font-family: Verdana;
+    font-weight: bold;
+    background-color: Navy;
+    color: White;
+    text-align: center;
+}
+td.table-header a
+{
+    color: White;
+}

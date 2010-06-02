@@ -1,0 +1,380 @@
+#navlist
+{
+	margin: 0;
+	padding: 0 0 20px 10px;
+	border-bottom: 1px solid #000;
+}
+
+#navlist ul, #navlist li
+{
+	margin: 0;
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+}
+
+#navlist a:link, #navlist a:visited
+{
+	float: left;
+	line-height: 14px;
+	font-weight: bold;
+	margin: 0 10px 4px 10px;
+	text-decoration: none;
+	color: #AAA;
+}
+
+#navlist a:link#current, #navlist a:visited#current
+{
+	border-bottom: 4px solid #000;
+	padding-bottom: 2px;
+	background: transparent;
+	color: #000;
+}
+
+#navlist a:hover 
+{ 
+	border-bottom: 4px solid #999;
+	padding-bottom: 2px;
+	background: transparent;
+	color: #333;
+}
+
+/* BODY du document */
+body
+{
+    font-family:Verdana, Arial, sans-serif;
+    /*font-family:"Trebuchet MS",Verdana,"Lucida Grande",Tahoma,Helvetica,Sans-Serif;*/
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+}
+/* fin BODY */
+
+/* CONTENEUR général du doc */
+/* contient NAVIGATION + MAIN + FOOTER */
+#all
+{
+    position: relative;
+	width: 95%;
+    height: 100%;
+	overflow: visible ;
+}
+/* fin CONTENEUR */
+
+/* NAVIGATION contient la barre de menu  en haut de l'écran */
+#navigation
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    height: 3em;
+    width: 511px;
+    /*margin: 0 auto;*/
+    /*background-color: #99CCCC;*/
+}
+/* fin NAVIGATION */
+
+/* HOME contient le lien pour retourner au menu général */
+#home
+{
+	width:150px; /* largeur exemple */
+	height:70px; /* hauteur exemple */
+	position:absolute;
+	top:0; /* on part du haut... */
+	left:0; 
+}
+/* fin HOME */
+
+/* LOGIN contient le formuliare pour se connecter */
+#login
+{
+	width:150px; /* largeur exemple */
+	height:70px; /* hauteur exemple */
+	position:absolute;
+	top:0; /* on part du haut... */
+	right:0; 
+	/*
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    height: 3em;
+    width: 423px;
+	*/
+    /*margin: 0 auto;*/
+    /*background-color: #99CCCC;*/
+	
+}
+/* fin LOGIN */
+
+/* MAIN contient les infos dynamiques du site */
+/* MAIN = TITRE + INFOS en mode CONSULTATION */
+#main
+{
+    /*background-color:#9999CC;*/
+    margin-left: 2em;
+    margin-top: 2em;
+    position: absolute;
+    width: 90%;
+    top: 2em;
+	overflow: visible ;
+}
+/* fin MAIN */
+
+
+/* INFOS */
+#infos
+{
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 580px;
+    top: 2em;
+	overflow: visible ;
+}
+/* fin INFOS */
+
+
+/* FOOTER contient la barre d'infos au bas de l'écran */
+#footer
+{
+    position: absolute;
+    height: 2em;
+    width: 100%;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    bottom: 1em;
+    /*background-color: #000000;*/
+    /* Centré */
+    text-align: center;
+    /*background-color: #99CC99;*/
+    z-index : -1;
+}
+/* fin FOOTER */
+
+/* TITRE contient la liste des titres en mode CONSULTATION */
+#consult_liste
+{
+    width: 25%;
+    height: 100%;
+    background-color: #808080;
+    text-align: center;
+    padding-right: .5em;
+    /*border-top: 1px solid #000;*/
+    border: 1px solid #000;
+    margin-right:2em;
+	margin-left:1em;
+	top: 6em;
+ /*position: absolute;*/
+}
+/* fin TITRE */
+
+/* INFOS contient les infos du film de la BD en mode CONSULTATION */
+/* INFOS = FILME + div + TITREE + MILIEU + IMAGE + SYNOPSIS + DETAILS */
+/* Le div a scroller */
+#consult_infos
+{
+    width: 70%;
+    color : #000000;
+    /*font-size : 13px;*/
+    /*font-family : Verdana;*/
+    background-color : #b0c4de;
+    z-index : 1000;
+    position: absolute;
+    display: none;
+    float: right;
+    border: 1px solid #000;
+    margin-left:27%;
+    /*padding-left: .5em;
+    padding-bottom: .5em;*/
+    top: 6em;
+}
+/* fin INFOS */
+
+/* AJOUT */
+#ajout_formu
+{
+    position: absolute;
+    width: 25%;
+    /*height: 100%;*/
+    background-color: #808080;
+    text-align: center;
+    padding-right: .5em;
+    /*border-top: 1px solid #000;*/
+    border: 1px solid #000;
+    margin-right:2em;
+	margin-left:1em;
+	top: 6em;
+}
+
+#ajout_liste
+{
+    position: relative;
+    width: 25%;
+    height: 100%;
+    background-color: #808080;
+    text-align: center;
+    padding-right: .5em;
+    /*border-top: 1px solid #000;*/
+    border: 1px solid #000;
+    margin-right:2em;
+	margin-left:1em;
+	top: 6em;
+display: none;
+}
+#ajout_detail
+{
+    width: 70%;
+    color : #000000;
+    /*font-size : 13px;*/
+    /*font-family : Verdana;*/
+    background-color : #b0c4de;
+    z-index : 1000;
+    position: absolute;
+    display: none;
+    float: right;
+    border: 1px solid #000;
+    margin-left:27%;
+    /*padding-left: .5em;
+    padding-bottom: .5em;*/
+    top: 6em;
+}
+#ajout_insert
+{
+    position: relative;
+    display: none;
+	top: 6em;
+}
+/* fin AJOUT */
+#filme
+{
+    position: relative;
+	height: 10%;
+
+}
+
+#bout_nav
+{
+    position: relative;
+}
+#titre
+{
+    position: relative;
+}
+#milieu
+{
+    position: relative;
+}
+#image
+{
+    position: relative;
+}
+#synopsis
+{
+    position: relative;
+}
+#details
+{
+    position: relative;
+}
+
+#boutton
+{
+    position: relative;
+	float: right;
+}
+
+
+/* LSResult */
+/* DIV pour faire patienter */ 
+#LSResult
+{
+    width: 25%;
+    height: 100%;
+    background-color: #808080;
+    text-align: center;
+    padding-right: .5em;
+    /*border-top: 1px solid #000;*/
+    border: 1px solid #000;
+    margin-right:2%;
+	margin-left:1em;
+	top: 6em;
+}
+/* fin LSResult */
+
+dl.projet
+{
+    width: 100%;
+    margin: 2em 0;
+    /*font-family: georgia, times, serif;*/
+}
+
+.projet dt
+{
+    width: 12em;
+    float: left;
+    font-weight: bold;
+    padding-left: .5em;
+}
+
+/* hack de commentaire avec un antislash pour ie5 mac \*/
+dt { clear: both; }
+/* end hack */
+
+.projet dd
+{
+    float: left;
+    width: 70%;
+    padding: .5em;
+}
+
+
+dl.table-display
+{
+    width: 100%;
+    margin: 2em 0;
+    padding: 0;
+}
+
+.table-display dt
+{
+    width: 10em;
+    float: left;
+    margin: 0 0 0 0;
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+.table-display dd
+{
+    float: left;
+    width: 70%;
+    margin: 0 0 0 0;
+/*    padding: .5em;
+    border-top: 1px solid #999;*/
+}
+
+
+
+#popLayer h6 {font-size:1.2em}
+#waitingMsg { position:absolute; width:300px; zoom:1; border:1px solid black; background:#fff; padding:20px 10px; font-size:20px; display:none;  z-index:1000 }
+#waitingMsg img {float:left;}
+#waitingMsg p {zoom:1; overflow:hidden;text-align:center; margin:0; margin-left:10px; padding:0; line-height:1.2em;}
+#shadowLayer {background:black; -moz-opacity:0.2; filter:alpha(opacity=20); opacity:0.2; position:absolute; width:100%; top:0; left:0; z-index:999}
+
+
+div#txtNeNews 
+{
+	width: 627;
+	height: 337px;
+	overflow: auto;
+	border: 1px solid #000;
+}
+
+#by {
+	background: #e3e3e3;
+	border-top: 1px solid white;
+	position: absolute;
+	bottom: 0;
+	width: 90%;
+	padding: .7em .7em .7em 2em;
+}
